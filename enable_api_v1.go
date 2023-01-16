@@ -4,7 +4,7 @@ import(
   crm "google.golang.org/api/cloudresourcemanager/v1"
   "google.golang.org/api/googleapi"
   "google.golang.org/api/serviceusage/v1"
-  "os_config_w/helpers"
+  "gcp-project-enable-api/packages"
   "context"
   "fmt"
   "strings"
