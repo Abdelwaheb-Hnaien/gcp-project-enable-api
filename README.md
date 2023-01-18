@@ -26,7 +26,7 @@ var (
 ...
 ```
 
-3. Initialise the module and install dependencies
+3. Initialize the module and install dependencies
 ```bash
 go mod init
 go mod tidy
@@ -37,11 +37,11 @@ go mod tidy
 go run enable_api_v1.go
 ```
 
-**Notice** : In this script I tried to skip some projects with the following condition :
+**Notice** : In this script, I tried to skip some projects using the following condition :
 ```go
 if project.Parent != nil && strings.Contains(project.ProjectId,"some-prefix")
 ```
 `project.Parent != nil` means make sure to consider only projects within the organization.
-the other condition is to consider only project ids that starts with "some-prefix".
+the other condition is to consider only project ids which starts with "some-prefix".
 
 This is optional, if you want to enable the API for all projects, comment line 45 and 60 before running the script.
